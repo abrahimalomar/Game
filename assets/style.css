@@ -1,0 +1,51 @@
+.circle {
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+  #gameArea {
+    /* border: 2px red solid; */
+    width: 800px; /* يأخذ عرض المتصفح بالكامل */
+    height: 600px; /* أو أي حجم تريده لمنطقة اللعب */
+  }
+  #timer {
+    margin-bottom: 15px;
+    font-size: large;
+    
+}
+#statistics {
+  background-color: #f8f9fa; /* لون الخلفية */
+  padding: 20px; /* المسافة الداخلية */
+}
+
+.card {
+  border-radius: 15px; /* تقويس الحواف */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+.card-header {
+  background-color: #007bff; /* لون الخلفية للعنوان */
+  color: #ffffff; /* لون النص للعنوان */
+}
+
+.card-body {
+  padding: 20px; /* المسافة الداخلية */
+}
+
+h5 {
+  margin-bottom: 10px; /* المسافة بين العناصر */
+  font-weight: bold; /* الخط العريض */
+}
+
+span {
+  color: #007bff; /* لون النص */
+  font-weight: bold; /* الخط العريض */
+}
