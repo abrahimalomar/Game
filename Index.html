@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ذكاء الأطفال - بداية اللعبة</title>
-  <!-- تضمين Bootstrap CSS -->
+  <title>Game</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
   
-  
-<div id="form" class="container mt-5">
-  <!-- <h1 class="text-center mb-4">لعبة ذكاء الأطفال</h1> -->
+<!-- Form -->
+<!-- <div id="form" class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="form-group">
@@ -23,6 +22,7 @@
       <div class="form-group">
         <label for="Selectlevel">select level</label>
         <select class="form-control" id="level" required>
+          <option value="">Select Level</option>
           <option value="1">easy</option>
           <option value="2">medium</option>
           <option value="3">hard</option>
@@ -30,18 +30,56 @@
       </div>
       
       <div class="form-group">
-        <label for="duration">تحديد المدة الزمنية (بالثواني):</label>
-        <input type="number" class="form-control" id="duration" placeholder="أدخل المدة الزمنية" required>
+        <label for="duration">Determine the duration of play</label>
+        <input type="number" class="form-control" id="duration" placeholder="Enter the time" required>
       </div>
-      <button type="button" class="btn btn-primary btn-block" onclick="startGame()">بدء اللعبة</button>
+      <button type="button" class="btn btn-primary btn-block" onclick="startGame()">start Game</button>
+
+      
+
+<div id="massage" class="text-center mt-4">
+
+  </div>
+
+
+    </div>
+  </div>
+</div>  -->
+
+<div id="form" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="playerName">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="Selectlevel">Select level:</label>
+        <select class="form-control" id="level" required>
+          <option value="">Select Level</option>
+          <option value="1">Easy</option>
+          <option value="2">Medium</option>
+          <option value="3">Hard</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="duration">Duration of play (seconds):</label>
+        <input type="number" class="form-control" id="duration" placeholder="Enter the time" required>
+      </div>
+      
+      <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" onclick="startGame()">Start Game</button>
+      </div>
+
+      <!-- Error Message -->
+      <div id="massage" class="text-center mt-4"></div>
     </div>
   </div>
 </div>
 
 
-
-
-
+<!-- container Which contains the balls -->
 <div id="container" style="display: none;"  class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -52,6 +90,9 @@
       </div>
     </div>
   </div>
+
+
+  <!-- statistics -->
 <div  id="statistics"  class="container"  style="display: none;">
   <div class="card mt-5 text-center">
     <div class="card-header bg-success">
@@ -74,15 +115,18 @@
   </div>
 </div>
 
-<!-- تضمين Bootstrap JS -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-<script src="assets/Js/scrpit.js">
-  
-</script>
-
+<script src="assets/Js/audio.js"></script>
+<script src="assets/Js/gamevariables.js"></script>
+<script src="assets/Js/main.js"></script>
+<script src="assets/Js/comparison.js"></script>
+<script src="assets/Js/randomNumber.js"></script>
+<script src="assets/Js/calculateTimeAndRadiusByLevel.js"></script>
+<script src="assets/Js/statistics.js"></script>
 </body>
 </html>
