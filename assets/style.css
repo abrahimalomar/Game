@@ -1,7 +1,7 @@
 body {
   background-color: #f0f0f0;
 }
-
+/* circle */
 .circle {
   border-radius: 50%;
   background-color: lightblue;
@@ -35,10 +35,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-header {
-  background-color: #007bff;
-  color: #ffffff;
-}
+
 
 .card-body {
   padding: 20px;
