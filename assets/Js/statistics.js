@@ -1,17 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 function displayStatistics() {
 
   document.getElementById("statistics").style.display = "block";

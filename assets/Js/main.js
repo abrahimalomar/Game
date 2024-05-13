@@ -90,8 +90,6 @@ function startGame() {
   }
 
 
-
-  
   function validateForm() {
     var name = document.getElementById("name").value;
     var level = document.getElementById("level").value;

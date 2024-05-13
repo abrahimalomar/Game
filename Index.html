@@ -9,56 +9,66 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
+ 
   
 <!-- Form -->
-<div id="form" class="container mt-5">
+<form id="form" class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-6">
+
+     
       <div class="form-group">
-        <label for="playerName">Name:</label>
+        <label for="playerName">Enter Name:</label>
         <input type="text" class="form-control" id="name" placeholder="Enter your Name" required>
       </div>
+
       <div class="form-group">
         <label for="Selectlevel">Select level:</label>
         <select class="form-control" id="level" required>
           <option value="">Select Level</option>
-          <option value="1">Easy</option>
-          <option value="2">Medium</option>
-          <option value="3">Hard</option>
+          <option value="1">level 1</option>
+          <option value="2">level 2</option>
+          <option value="3">level 3</option>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="duration">Duration of play (seconds):</label>
+        <label for="duration">Enter the duration in seconds you wish to play:</label>
         <input type="number" class="form-control" id="duration" placeholder="Enter the time" required>
       </div>
       
       <div class="form-group">
-        <button type="button" class="btn btn-primary btn-block" onclick="startGame()">Start Game</button>
+        <button type="button" class="btn btn-success btn-block" onclick="startGame()">Start Game</button>
       </div>
 
       <!-- Error Message -->
-      <div id="massage" class="text-center mt-4"></div>
+      <div id="massage" class="text-center mt-4">
+        
+      </div>
+
+    
     </div>
   </div>
-</div>
+</form>
 
 
-<!-- container Which contains the balls -->
+<!-- The container containing the balls that is shown to the player -->
 <div id="container" style="display: none;"  class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div id="gameArea" class="text-center mb-4">
         
         </div>
-        <div id="timer" class="text-right"></div>
+        <!--Show Remaining time-->
+        <div id="timer" class="text-right">
+
+        </div>
       </div>
     </div>
   </div>
 
 
-  <!-- statistics -->
+  <!--show  statistics -->
 <div  id="statistics"  class="container"  style="display: none;">
   <div class="card mt-5 text-center">
     <div class="card-header bg-success">

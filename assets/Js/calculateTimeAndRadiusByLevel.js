@@ -15,11 +15,11 @@ function calculateRadiusByLevel(currentLevel) {
     }
     return radius;
   }
+
   function calculateTimeLevel(level) {
     let lengthTime;
     switch (level) {
       case 1:
-  
         return 2;
       case 2:
         return 1.5;
